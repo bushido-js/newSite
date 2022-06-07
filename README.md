@@ -1,2 +1,2 @@
-# Bushido Page version 1.1
+# Bushido Page version 1.2
 Простой самописный сайт для работ
