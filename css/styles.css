@@ -1,0 +1,206 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Font */
+
+* {
+  font-size: 23px;
+  color: #A2A2A2;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+/* Font End */
+
+/* Basic */
+
+#tag-name-2 {
+  text-align: center;
+  font-size: 27px ;
+}
+
+.wrapper {
+  margin:30px;
+}
+/* Basic End */
+
+/* Main Content */
+.gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+}
+
+  .gallery-window {
+    min-height: 530px;
+    min-width: 350px;
+  }
+
+  .image-wrapper{
+    min-width: 350px;
+    min-height: 427px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .gallery-image{
+    
+    border-radius: 10px;
+    cursor: default;
+
+      /*Тестовый вариант тени*/
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      /*Тестовый вариант тени*/
+  }
+    /*Тестовый вариант тени*/
+    .gallery-image:hover {
+      box-shadow: 0 0px 1px rgba(0,0,0,0.12), 
+                0 0px 2px rgba(0,0,0,0.12), 
+                0 0px 4px rgba(0,0,0,0.12), 
+                0 0px 8px rgba(0,0,0,0.12),
+                0 0px 16px rgba(0,0,0,0.12); 
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      }
+    /*Тестовый вариант тени*/
+
+
+
+.deskription-list {
+  display:flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  margin-left:20px;
+}
+
+.deskription-list-functional .deskription-link {
+  color: #4DBF9D;
+}
+
+.deskription-list-functional .deskription-link:hover{
+  color:gray;
+}
+
+.deskription-item {
+  margin-right: 10px;
+}
+
+.tech {
+  cursor: default;
+}
+
+.deskription-link:hover {
+  color: orangered;
+}
+
+.deskription-link{
+  text-decoration: none;
+  color: #A2A2A2;
+}
+
+.link-function{
+  font-size: 23px;
+}
+
+.name-project {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #606060;
+}
+/* End Basic */
+
+/* Media Start */
+
+/* @media screen and (max-width: 770px) {
+  .gallery {
+    grid-template-columns: auto;
+  }
+  .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin: 30px;
+  }
+} */
+
+/* Media End */
+
+
