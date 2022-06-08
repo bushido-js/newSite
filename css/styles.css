@@ -152,7 +152,10 @@ select {
 }
 
 .deskription-list-functional .deskription-link {
-  color: #4DBF9D;
+  color: #12c690;
+}
+.deskription-list-functional .page{
+  color: #ff6600;
 }
 
 .deskription-list-functional .deskription-link:hover{
